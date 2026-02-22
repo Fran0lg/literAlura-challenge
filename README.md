@@ -1,19 +1,23 @@
-# LiterAlura - Catálogo de Libros
+# LiterAlura - Challenge Alura Latam 
 
-## Descripción
-Desafío de programación que consiste en construir un catálogo de libros consumiendo la API de Gutendex, 
-manipulando datos JSON y persistiendo la información en una base de datos relacional.
+¡Bienvenido al proyecto LiterAlura! Una herramienta de consola desarrollada en Java que permite gestionar un catálogo de libros y autores conectándose a la API de Gutendex.
 
 ## Funcionalidades
-- [ ] Búsqueda de libros por título.
-- [ ] Listar libros registrados.
-- [ ] Listar autores registrados.
-- [ ] Listar autores vivos en un determinado año.
-- [ ] Listar libros por idioma.
+- **Buscar libro por título:** Obtiene datos directamente desde la API y los persiste en una base de datos PostgreSQL.
+- **Listar libros registrados:** Muestra todos los libros almacenados localmente.
+- **Listar autores registrados:** Presenta una lista de los escritores guardados.
+- **Autores vivos en determinado año:** Filtra autores según su periodo de vida.
+- **Estadísticas por idioma:** Consulta cuántos libros hay registrados en un idioma específico (ES, EN, FR, PT).
 
-## Tecnologías
-- Java 17+
-- Spring Boot
-- Maven
-- JPA / Hibernate
-- PostgreSQL (o H2)
+## Tecnologías utilizadas
+- **Java 17**
+- **Spring Boot 3**
+- **Spring Data JPA**
+- **PostgreSQL**
+- **Jackson (Manejo de JSON)**
+- **API Gutendex**
+
+## Cómo ejecutar el proyecto
+1. Clona el repositorio.
+2. Configura tus credenciales de base de datos en `application.properties`.
+3. Ejecuta la clase `LiteraluraApplication`.
